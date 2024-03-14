@@ -1,11 +1,6 @@
-<app-pokemon></app-pokemon>
-
-
-<form class="form-container" (ngSubmit)="onSubmit(form)" #form="ngForm">
-  <input (change) type="text"  placeholder="firstName" ngModel name="firstName"/>
-  <input type="text" placeholder="laastName" ngModel name="lastName"/>
-   <input type="text" placeholder="address" ngModel name="address"/>
-   <input type="number" placeholder="phone number" ngModel name="phone"/>
-   <button type="submit">Submit</button>
-  </form> 
-  <a href="app.component.html"></a>
+<div class="box">
+  <a routerLink="/">Home</a>
+  <a routerLink="/pokemon">pokemon</a>
+  
+</div>
+<router-outlet></router-outlet>

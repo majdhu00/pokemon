@@ -1,1 +1,23 @@
-<p>pokemon worksajshffuashfukashfkha!</p>
+
+
+
+<form class="form-container" (ngSubmit)="onSubmit(form)"  #form="ngForm">
+    
+    <input  type="text"  placeholder="enter your full name" required ngModel name="fullName" #fullname="ngModel"/>
+    <p *ngIf="fullname.invalid && fullname.touched" [ngStyle]="{'color':'red'}">name cannot be empty</p>
+     <input type="text" placeholder="enter your email" required ngModel name="email" #address="ngModel"/>
+     <p *ngIf="address.invalid && address.touched" [ngStyle]="{'color':'red'}">Invalid email</p>
+     <div class="group" ngModelGroup="userDetails"  #phone="ngModelGroup">
+      <input type="number" placeholder="prefix phone" required ngModel name="title-input" />
+      <input type="number" placeholder="phone number" required ngModel name="phone-input" />
+     </div>
+     <p *ngIf="phone.invalid && phone.touched" [ngStyle]="{'color':'red'}">Invalid phone number</p>
+
+     <input type="text" placeholder="enter your credit card " required ngModel name="card" #card="ngModel"/>
+     <p *ngIf="card.invalid && card.touched" [ngStyle]="{'color':'red'}">Invalid credit card</p>
+    
+     <button type="submit" [disabled]="!form.valid">payment done succsessfully</button>
+  
+  
+     
+    </form> 

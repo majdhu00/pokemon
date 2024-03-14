@@ -1,0 +1,27 @@
+.box {
+    display: flex;
+    
+    padding: 20px; 
+   
+    background: linear-gradient(to bottom, black 10%, white 10%);
+  
+}
+
+
+ 
+    a {
+        display: flexbox;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100%;
+       
+      }
+     
+ 
+
+
+.box a:hover {
+    color: #007bff; /* Change text color on hover */
+}
