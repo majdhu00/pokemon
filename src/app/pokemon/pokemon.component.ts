@@ -11,6 +11,6 @@ export class PokemonComponent {
 
   onSubmit = (form:NgForm) => {
     console.log(form)
-    alert('Successful');
+    alert('payment done succsessfully');
   }
 }
